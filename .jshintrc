@@ -1,0 +1,16 @@
+{
+  "esversion": 6,
+  "globalstrict": true,
+  "globals": {
+    "require": true,
+    "module": true,
+    "console": true,
+    "__dirname": true,
+    "process": true,
+    "exports": true,
+    "sails": true,
+    "User": true,
+    "CipherService": true,
+    "HashService": true
+  }
+}
