@@ -10,6 +10,7 @@ const newUser = {
 
 describe('models:User', () => {
   it('Should create new user', done => {
+    console.log(process.env.TEST);
     User
       .create(newUser)
       .then(user => {
@@ -18,14 +19,14 @@ describe('models:User', () => {
       })
       .catch(done);
   });
-
-  it('Should remove user', done => {
-    User
-      .destroy({username: newUser.username})
-      .then(users => {
-        assert.equal(users[0].username, newUser.username);
-        done();
-      })
-      .catch(done);
-  });
+  //
+  // it('Should remove user', done => {
+  //   User
+  //     .destroy({username: newUser.username})
+  //     .then(users => {
+  //       assert.equal(users[0].username, newUser.username);
+  //       done();
+  //     })
+  //     .catch(done);
+  // });
 });

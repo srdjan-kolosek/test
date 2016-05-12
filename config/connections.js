@@ -123,7 +123,7 @@ module.exports = {
       adapter: 'sails-dynamodb',
       accessKeyId: '',
       secretAccessKey: '',
-      region: 'us-west-1'
+      region: 'eu-central-1'
     },
 
     /**
